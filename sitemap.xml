@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://yoursite.com/research.html</loc>
+        <lastmod>2013-11-14T20:19:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/courses.html</loc>
+        <lastmod>2013-11-14T20:19:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/robots.txt</loc>
+        <lastmod>2013-11-14T16:11:59+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/blog/archives/</loc>
+        <lastmod>2013-11-14T16:11:59+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/articles.html</loc>
+        <lastmod>2013-11-14T20:23:11+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/faculty.html</loc>
+        <lastmod>2013-11-14T20:21:25+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/</loc>
+        <lastmod>2013-11-14T20:19:17+05:30</lastmod>
+    </url>
+    <url>
+        <loc>http://yoursite.com/contacts.html</loc>
+        <lastmod>2013-11-14T20:22:48+05:30</lastmod>
+    </url>
+</urlset>
