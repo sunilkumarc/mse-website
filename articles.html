@@ -11,6 +11,7 @@
 <!--  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">-->
   <link rel="stylesheet" href="stylesheets/screen.css">
 <!--  <script src="javascripts/custom.modernizr.js"></script>-->
+    <script src="javascripts/jquery-1.9.1.js"></script>
 </head>
 <body>
     <nav class="top-bar">
@@ -19,7 +20,7 @@
       <li class="name">
         <h1>
           <a href="#" style="width:100%;">
-            Mobile System Engineering
+            Mobile Systems Engineering
           </a>
         </h1>
       </li>
@@ -38,7 +39,39 @@
     </section>
 </nav>
     <div class="container">
-        
+        <div id="articles" class="row">
+    <br/>
+</div>
+
+<script type="text/javascript">
+    $.ajax({
+        url: "http://localhost:8000/article?no=2",
+    }).done(function(data) {
+        var articlesDiv = $("#articles");
+        var data = JSON.parse(data);
+        for (sections in data) {
+            var sections = data[sections];
+            for (section in sections) {
+                var section = sections[section];
+                for (topic in section) {
+                    var topicDiv = $(document.createElement("div"));
+                    topicDiv.addClass("small-12 large-12 panel columns");
+                    topicDiv.append($(document.createElement("div"))
+                                    .addClass("row")
+                                    .html("<h2>" + topic + "</h2>"));                    
+                    articlesDiv.append(topicDiv);
+                    var topic = section[topic];
+                    for (article in topic) {
+                        var article = topic[article];
+                        topicDiv.append($(document.createElement("div"))
+                                        .addClass("small-12 large-4 panel left columns")
+                                        .html("<h5>" + article['title'] + "</h5>" + "<p>" + article['text'] + "</p>"));
+                    }
+                }
+            }
+        }
+    });
+</script>
     </div>
     <footer class="row">
     <div class="large-12 columns"><hr />
