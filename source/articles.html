@@ -1,3 +1,37 @@
 ---
 layout: mylayout
 ---
+
+<div id="articles" class="row">
+    <br/>
+</div>
+
+<script type="text/javascript">
+    $.ajax({
+        url: "http://localhost:8000/article?no=2",
+    }).done(function(data) {
+        var articlesDiv = $("#articles");
+        var data = JSON.parse(data);
+        for (sections in data) {
+            var sections = data[sections];
+            for (section in sections) {
+                var section = sections[section];
+                for (topic in section) {
+                    var topicDiv = $(document.createElement("div"));
+                    topicDiv.addClass("small-12 large-12 panel columns");
+                    topicDiv.append($(document.createElement("div"))
+                                    .addClass("row")
+                                    .html("<h2>" + topic + "</h2>"));                    
+                    articlesDiv.append(topicDiv);
+                    var topic = section[topic];
+                    for (article in topic) {
+                        var article = topic[article];
+                        topicDiv.append($(document.createElement("div"))
+                                        .addClass("small-12 large-4 panel left columns")
+                                        .html("<h5>" + article['title'] + "</h5>" + "<p>" + article['text'] + "</p>"));
+                    }
+                }
+            }
+        }
+    });
+</script>
