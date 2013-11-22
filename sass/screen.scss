@@ -1,2 +1,14 @@
 //@import "compass";
 //@include global-reset;
+@import "foundation";
+
+#featured.orbit-slide img{
+	margin:0 auto;
+	position:relative;
+	display:block;
+}
+
+
+body {
+	
+}
