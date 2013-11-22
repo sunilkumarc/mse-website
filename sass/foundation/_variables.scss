@@ -25,7 +25,8 @@ $em-base: 16px !default;
 
 $default-float: left;
 
-$body-bg: #f5fafa;
+// $body-bg: url('http://html5up.net/assets/css/images/bg.jpg');
+$body-bg: -webkit-radial-gradient(circle, #CCCCCC, #2F2727);
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -789,7 +790,7 @@ $orbit-caption-position: "under";    // Supported values: "bottom", "under"
 
 // We use these to control the left/right nav styles
 
-// $orbit-nav-bg: #007294;
+//  $orbit-nav-bg: #007294;
 // $orbit-nav-bg-hover: #90C2DB;
 // $orbit-nav-arrow-color: #fff;
 $orbit-nav-arrow-color-hover: #fff;
