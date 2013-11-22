@@ -1,0 +1,25 @@
+{
+    "sections":[
+        {
+            "topicOne":[
+                {"title":"article1A","text":"Nibh quam sed risus nisl sit."},
+                {"title":"article1B","text":"Nisi nec orci gravida mollis."},
+                {"title":"article1C","text":"Nisl neque porttitor condimentum curae ultricies nam, enim vel augue."}
+            ]
+        },
+        {
+            "topicTwo":[
+                {"title":"article2A","text":"Mi, erat odio volutpat."},
+                {"title":"article2B","text":"Est ac a varius."}
+            ]
+        },
+        {
+            "topicThree":[
+                {"title":"article3A","text":"Sagittis porta sed quam mus ac."},
+                {"title":"article3B","text":"Id lobortis eros tortor faucibus scelerisque torquent, natoque aliquam duis aliquam et morbi consectetuer velit."},
+                {"title":"article3C","text":"Mus donec non vitae proin, nam."},
+                {"title":"article3D","text":"Tempus vel, egestas, rutrum, justo inceptos."}
+            ]
+        }
+    ]
+}
